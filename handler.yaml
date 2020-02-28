@@ -1,5 +1,5 @@
 ---
-- name: Handler
+    - name: Handler
   hosts: all
   become: true
   become_method: sudo
@@ -23,7 +23,7 @@
       systemd:
         name: httpd
         state: restarted
-        
+
     - name: MYSQL RESTART
       systemd:
         name: mysqld
